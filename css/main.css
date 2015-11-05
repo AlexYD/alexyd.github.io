@@ -1,0 +1,222 @@
+body { background-color: #fff6f6; }
+/*h1 { position: relative; left: +5%; width: 95%; }*/
+/*h3 { position: relative; left: +5%; width: 95%; }*/
+/*h3 { border-bottom: 1px solid grey;   }*/
+hr
+{   margin: 0 -15px 0 -15px;
+    --width: 100%;
+    flex-grow: 100;
+    border: 1px solid grey;
+    
+    
+}
+
+ul, li, p { text-align: justify;
+    text-justify: inter-word; }
+table { border: 2px solid black; }
+tr, th, td { border: 1px solid grey; text-align: center; }
+table tr:first-child
+{ border-bottom: 2px solid black;
+}
+
+.ml-paragraph
+{   display: block;
+    border: none;
+    margin: 5px 0 10px 0;
+    padding: 0;
+    background: #fff;
+    font-family: inherit;
+    font-size: 100%;
+}
+.ml-box {
+	position: relative;
+	width: 100%;		/* desired width */
+}
+.ml-box:before{
+	content: "";
+	display: block;
+	padding-top: 100%;/* initial ratio of 1:1*/
+}
+.ml-box-phi
+{   position: relative;
+	width: 100%;		/* desired width */
+}
+.ml-box-phi:before
+{   content: "";
+	display: block;
+	padding-top: 61.8034%; 	/* initial ratio of 1.618034:1 */
+}
+
+.ml-box-content
+{   position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+}
+
+.ml-vcenter
+{   display: flex;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+}
+.ml-header-main-div
+{   display: flex;
+    margin: 1% 1%;
+    width: 98%;
+    -width: -moz-calc(100% - 60px);
+    -width: -webkit-calc(100% - 60px);
+    -width: -o-calc(100% - 60px);
+    -width: calc(100% - 60px);
+    --height: 92px;
+    --height: auto;
+    
+    border: 2px groove grey;
+    border-radius: 15px;
+    
+    background: #c1c1c1;
+}
+.ml-header-div-top
+{
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid grey;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.ml-header-div-bottom
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    -border: 1px groove red;
+}
+.ml-header-div-bottom-item
+{
+    padding: 0px 5px;
+    border-right: 1px solid grey;
+}
+.ml-header-div-left
+{   display: flex;
+    align-items: center;
+    border-right: 1px solid grey;
+    margin: 0;
+    -border: 1px groove red;
+    padding: 0;
+}
+.ml-header-div-main
+{   display: flex;
+    align-content: center;
+    align-items: center;
+    margin: 5px 0px;
+}
+.ml-header-div-right
+{   display: flex;
+    align-items: center;
+    border-left: 1px solid grey;
+    padding: 0px px;
+    -border-right: 1px solid grey;
+}
+
+.ml-vcenter-container
+{
+    /*display: table;*/
+    /*position: absolute;*/
+    height: 100%;
+    width: 100%;
+}
+
+.ml-vcenter-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ml-vcenter-inner {
+    margin-left: auto;
+    margin-right: auto; 
+    /*width: /*whatever width you want*/;
+}
+
+.ml-vcentered {
+  text-align: center;
+}
+
+.ml-vcentered:before {
+  content: '';
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+.ml-vcentered > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.ml-round-box {
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: #d0d0d0;
+}
+
+.ml-main-container
+{   display: flex;
+    margin: 0% 1%;
+    padding: 15px 15px;
+    width: auto;
+    background-color: #fff;
+
+    border: 2px groove grey;
+    border-radius: 15px;
+}
+#ml-main-container-div-left
+{   margin-left: -15px; margin-top:-15px; margin-bottom: -15px;
+    border-right: 1px solid grey; 
+    width: 25%; padding: 10px; height: auto;
+}
+#ml-main-container-div-content
+{   comment-width: 80%;
+    border: none;
+    margin: -15px -5px 0 5px;
+}
+
+/* center & shrink image inside {container with this class} to fit it properly */
+.ml-cimage
+{ display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 2px black;
+  -border: 1px solid grey;
+  margin: 0.5%;
+}
+.ml-cimage > img
+{ max-height: 100%;
+  max-width: 100%;
+}
+
+/* end of .ml-cimage block*/
+.ml-div-images { display: flex; width: 100%; flex-wrap: wrap; justify-content: center; }
+
+.ml-sq100px { width: 100px; height: 100px; }
+.ml-sq150px { width: 150px; height: 150px; }
+.ml-sq200px { width: 200px; height: 200px; }
+.ml-sq300px { width: 300px; height: 300px; }
+.ml-rect300x200px { width: 300px; height: 200px; }
+
+.ml-sq25vw { width: 25vw; height: 25vw; }
+
+.ml-w100pc { width: 100%; }
+.ml-h100pc { height: 100%; }
+
+.ml-pl10 {padding-left:10px;}
+.ml-pr10 {padding-right:10px;}
+
+.ml-div-code
+{ padding: 5px 10px;
+  --box-shadow: 0 0 2px grey;
+  border: 1px solid lightGrey;
+  border-radius: 5px;
+  width: 90vw;
+  margin: -5px 0 25px 0;
+}
+footer
+{    background-color: #ddd;
+}

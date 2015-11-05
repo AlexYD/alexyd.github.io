@@ -1,0 +1,113 @@
+/* Adapted from http://cssmenumaker.com/menu/modern-jquery-accordion-menu */
+.ml-mr10px {
+  margin-right: 10px;
+}
+
+/* Base Styles */
+#cssmenu,
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  position: relative;
+}
+
+#cssmenu {
+  width: 100%;
+  border: none;
+}
+
+#cssmenu > ul > li:first-child {
+  background: #ddd;
+  border: 1px solid #000;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px 5px 0 0;
+}
+
+#cssmenu > ul > li:last-child > a {
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0;
+  border-radius: 0 0 5px 5px;
+}
+
+#cssmenu > ul > li:first-child > a {
+  padding: 5px 10px;
+  border: none;
+  text-align: left;
+}
+
+#cssmenu > ul > li:first-child:hover {
+  background: #aaa;
+}
+
+#cssmenu > ul > li {
+  background: #ddd;
+}
+
+#cssmenu li {
+  text-align: left;
+  text-justify: none;
+}
+
+#cssmenu > ul > li:hover {
+  background: #aaa;
+}
+
+#cssmenu > ul > li > a {
+  display: block;
+  color: #000;
+  border: 1px solid #000;
+  border-top: none;
+  padding: 5px 10px;
+}
+
+#cssmenu > ul > li > a:hover {
+  text-decoration: none;
+}
+
+#cssmenu > ul > li.has-sub > a {
+  background: url(images/icon_plus.png) 96% center no-repeat;
+}
+
+#cssmenu > ul > li.has-sub.active > a {
+  background: url(images/icon_minus.png) 96% center no-repeat;
+}
+
+/* Sub menu */
+#cssmenu ul ul {
+  display: none;
+  background: #fff;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+}
+
+#cssmenu ul ul li {
+  padding: 0;
+  border-bottom: 1px solid #000;
+  border-top: none;
+  background: #fff;
+}
+
+#cssmenu ul ul a {
+  padding: 5px 10px 5px 25px;
+  display: block;
+  color: #000;
+}
+
+#cssmenu ul ul a:before {
+  content: "\f0da";
+  font-family: 'FontAwesome';
+  position: absolute;
+  left: 10px;
+  color: #00e;
+}
+
+#cssmenu ul ul a:hover {
+  color: #000;
+  background-color: #fdd;
+}
